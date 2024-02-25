@@ -1,6 +1,6 @@
 pkgbase=linux-rust
 # select the branch to play with
-pkgver="tcp_cca_rfc"
+pkgver="tcp_cca_rfc_2"
 pkgrel=1
 pkgdesc='Valentins Rust-for-Linux Playground'
 url='https://github.com/vobst/rust4lx'
@@ -26,10 +26,10 @@ source=(
   ${url}/archive/refs/heads/${_branch}.zip
   config
 )
-sha256sums=('48e0f1f951ac5db2cb40916c5c2028040a8348f2c4154832689ffa77d005269e'
-            '4832d25cd9e93321e529d17f0e06147da5588be7b2ce874d3a91eac2da1d20d8')
-b2sums=('f68d68b380124b77b0eb3c751332f8d0b44d385d22219de7f748cbd40aa43214d8a2351dfd93ade6cd614d173bc9e2566d677ca32d53abfeb29dad2eecd21c2b'
-        '1b97f598c5bcb4d3d38c1de8bd9ec15b8ae00125cffa94e96d73d80144577f096386881f34ab024cd794c8af495bee1948d073750db2fdbe32fe0626d9dbad94')
+sha256sums=('8d2c73ffc3a185a6ff66759df110fc64d83654840538e8286d938768411c9a0d'
+            'ab6560532216aea574767dd9c030796f382f18ae76033ff0c102af0551160cae')
+b2sums=('33b03bb541becff993e356e2b850c1ebec6e628917f1f1e80a364cc1d615657c2721a1b06c96ae3568681adccbafbbf9db64e0b36b996e9591db0aa2a98e518c'
+        'b9ff57f2ae88e88454d1f49ff21f0af2d048df8ae741adac9ab8550c5dea4d6fb90140ad8a070999f680f8d4f01afd5c334c44512e4f683943537c0eca4b3c41')
 
 prepare() {
   cd $_srcname
